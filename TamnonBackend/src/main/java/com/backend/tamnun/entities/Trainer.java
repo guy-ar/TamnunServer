@@ -3,9 +3,13 @@ package com.backend.tamnun.entities;
 import java.util.Arrays;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Lob;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="trainer")
 public class Trainer extends AbstractEntity {
 	@Column(name="is_signed")
 	private boolean isSigned;
